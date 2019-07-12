@@ -1,0 +1,18 @@
+Öncelikle iyi bayramlar dilerim hocam. 
+
+Programin çalișma mekanizmasi așagidaki gibidir. 
+
+Öncelikle 5 tane filesytem dosyasi olup (filesystem1.dat, filesystem2.dat.... filesystem5.dat șeklinde)
+Her bir filesystemin içinde de 5 er tane içerigi boș olan filelar (a1, a2..,a5 b1,b2..b5,c1,c2..c5,d1,d2.. d5, e1, e2.., e5 șeklinde) mevcuttur. 
+
+section1.com (asm1 için) creat edilecek yeni dosya adi girilir ve dosya create edilerek açilir ve içerigine 0-50 sayilari yazilarak file kapatilir.Eğer dosya zaten varsa mevcut dosyanın içeriğine yazılır.  
+
+section2.com calistirilarak dosya adı girilir ve o dosyanın icerigi(datası) ekrana dosyadan read edilerek basilir
+
+Tüm fileların in içerigini(datasını) gorebilmek icin de section3.com (asm3 için) calistirilarak root un içinde ki tum filelerin bilgileri ekrana basilir.
+
+Son olarak selection4.com çaliștirilarak 0-50 rakamlarinin yazdigi dosya adi girilerek calistirilir,0-50 den sonra 50-60 arasininda dosya icerigine eklendigi gorulur.
+
+debug 0 için program sonlandıktan sonra directory e ait attributelar(datasız olarak) ekrana basılır.
+
+debug 1 için ise her systemcall dan sonra file table'ın içindeki tüm attribute ve data ekrana basılır.
